@@ -29,7 +29,13 @@ void retiro(double valor){
     if(saldo >= valor){
     saldo -= valor;
     }
-       
-    
+ 
+     
+}      
+ void transaccion(Cuenta nuevaC,double valor){
+     if(saldo>= valor){
+     saldo -= valor;
+     nuevaC.consignar(valor);
+     }
 }        
 }
